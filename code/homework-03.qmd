@@ -25,5 +25,7 @@ library(gt)
 # 1. Personal data
 
 ## a. Data Summarizing
+I could calculate the mean screen time in minutes to compare my average screen time with the average minutes I spent in class. In days that I spent greater time in class, I would expect to have a lower screen time.
 
+## b. 
 
