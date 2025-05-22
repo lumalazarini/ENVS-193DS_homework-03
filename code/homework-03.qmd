@@ -68,3 +68,11 @@ ggplot(data= HW 1 ENVS 193DS - Screen time.csv,
 
 ## a.
 A form of affective data visualization I can use to depict my personal data  would be to draw a student sitting in class, completely glued to their phone, while the teacher is in the background. I’d exaggerate the artwork by having the phone glow or even have the student melting into the screen to show how consuming it is. This would reflect the behavioral side of my data to test whether being in class actually limits my screen time, or if it doesn't change anything. The goal would be to make the viewer feel the disconnect that phones can cause, even in learning environments.
+
+##b. 
+```{r}
+![](IMG_6713.HEIC)
+```
+
+
+
