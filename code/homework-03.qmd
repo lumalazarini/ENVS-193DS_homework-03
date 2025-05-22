@@ -28,4 +28,43 @@ library(gt)
 I could calculate the mean screen time in minutes to compare my average screen time with the average minutes I spent in class. In days that I spent greater time in class, I would expect to have a lower screen time.
 
 ## b. 
+```{r}
+#reading in my data
+screen_time <- read_csv(Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/data/screen_time.csv)
 
+```
+```{r}
+#create a category based on class time
+data <- data %>%
+  mutate(class_time_group = ifelse(`Minutes of class` > median(`Minutes of class`, na.rm = TRUE),
+                                   "High Class Time", "Low Class Time"))
+  
+#creating visualization
+ggplot(data= HW 1 ENVS 193DS - Screen time.csv, 
+       aes(x = class_time_group, 
+           y = `Screen time (min)`, 
+           fill = class_time_group)) +
+  geom_jitter(width = 0.2, 
+              alpha = 0.6, 
+              color = "black") +  # individual data points
+  stat_summary(fun = mean, 
+               geom = "crossbar", 
+               width = 0.5,
+               color = "darkred", 
+               fatten = 2, 
+               show.legend = FALSE) +  # mean bars
+  scale_fill_manual(values = c("High Class Time" = "#2E86AB", 
+                               "Low Class Time" = "#F18F01")) +
+  labs(
+    title = "Average Screen Time by Class Time Group",
+    x = "Class Time Group",
+    y = "Screen Time (minutes)"
+  ) +
+  theme_minimal()
+```
+
+
+# 2.  Affective visualization
+
+## a.
+A form of affective data visualization I can use to depict my personal data  would be to draw a student sitting in class, completely glued to their phone, while the teacher is in the background. I’d exaggerate the artwork by having the phone glow or even have the student melting into the screen to show how consuming it is. This would reflect the behavioral side of my data to test whether being in class actually limits my screen time, or if it doesn't change anything. The goal would be to make the viewer feel the disconnect that phones can cause, even in learning environments.
