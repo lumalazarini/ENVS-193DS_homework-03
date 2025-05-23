@@ -98,6 +98,9 @@ This paper utilizes linear regression as the statistical test.
 ## b. 
 The authors visually represented their statistics very clearly. The linear regression model attached displays the proper response and predictor variables on the y- and x-axes, respectively. The figure shows summary statistics by providing the line of best fit along with the individual data points and a 95% confidence interval shaded around the line, which helps show the model’s uncertainty while still letting the reader see the raw data.
 
+## c.
+The authors handled visual clutter well. The individual dots as data points are small but still easy to see. The line of best fit is a good thickness (not too bold) and the 95% confidence interval is a transparent grey that blends well with the background, so it doesn’t overwhelm the reader or distract from the actual data.
 
+## d. 
 
 
