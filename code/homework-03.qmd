@@ -79,6 +79,13 @@ A form of affective data visualization I can use to depict my personal data  wou
 ## d. 
 My piece shows a student melting into the screen of their phone as a way to display how distracted we are by our phones, to the point where we don’t even pay attention in class. I was inspired by Jill Petito’s paintings because they made me want to make something that also looked aesthetically pleasing, and I also liked how Lorraine Woodruff-Long put deeper meaning behind her work, which made me think about how to do the same with mine. I did a pencil drawing because this was the only way I knew I could depict this. I started by sketching the outline, then slowly added more details and shading until I felt like it was finished.
 
+# 3.
+
+## a. 
+This paper utilizes linear regression as the statistical test.
+```{r}
+![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
+```
 
 
 
