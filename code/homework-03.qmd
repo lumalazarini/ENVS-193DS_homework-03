@@ -63,6 +63,15 @@ ggplot(data= HW 1 ENVS 193DS - Screen time.csv,
   theme_minimal()
 ```
 
+```{r}
+#Same as HW2
+ggplot(data= screen_time_clean, #get data from glaciers file
+       aes(x= minutes_of_class,#x-axis is the time in class
+           y= screen_time_min))+ #y-axis is the screen time
+  geom_point(color= "skyblue")+ #make dots blue
+  labs(x= "Time in Class (min)",
+       y= "Screen Time (min)") #relabel for aesthetics
+```
 
 # 2.  Affective visualization
 
@@ -86,6 +95,9 @@ This paper utilizes linear regression as the statistical test.
 ```{r}
 ![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
 ```
+## b. 
+The authors visually represented their statistics very clearly. The linear regression model attached displays the proper response and predictor variables on the y- and x-axes, respectively. The figure shows summary statistics by providing the line of best fit along with the individual data points and a 95% confidence interval shaded around the line, which helps show the model’s uncertainty while still letting the reader see the raw data.
+
 
 
 
