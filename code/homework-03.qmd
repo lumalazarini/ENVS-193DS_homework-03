@@ -69,10 +69,16 @@ ggplot(data= HW 1 ENVS 193DS - Screen time.csv,
 ## a.
 A form of affective data visualization I can use to depict my personal data  would be to draw a student sitting in class, completely glued to their phone, while the teacher is in the background. I’d exaggerate the artwork by having the phone glow or even have the student melting into the screen to show how consuming it is. This would reflect the behavioral side of my data to test whether being in class actually limits my screen time, or if it doesn't change anything. The goal would be to make the viewer feel the disconnect that phones can cause, even in learning environments.
 
-##b. 
+## b. 
 ```{r}
 ![](IMG_6713.HEIC)
 ```
+
+## c.
+
+## d. 
+My piece shows a student melting into the screen of their phone as a way to display how distracted we are by our phones, to the point where we don’t even pay attention in class. I was inspired by Jill Petito’s paintings because they made me want to make something that also looked aesthetically pleasing, and I also liked how Lorraine Woodruff-Long put deeper meaning behind her work, which made me think about how to do the same with mine. I did a pencil drawing because this was the only way I knew I could depict this. I started by sketching the outline, then slowly added more details and shading until I felt like it was finished.
+
 
 
 
