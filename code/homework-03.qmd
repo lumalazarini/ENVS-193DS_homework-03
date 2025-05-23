@@ -102,5 +102,5 @@ The authors visually represented their statistics very clearly. The linear regre
 The authors handled visual clutter well. The individual dots as data points are small but still easy to see. The line of best fit is a good thickness (not too bold) and the 95% confidence interval is a transparent grey that blends well with the background, so it doesn’t overwhelm the reader or distract from the actual data.
 
 ## d. 
-
+One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.
 
