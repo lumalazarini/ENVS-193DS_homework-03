@@ -25,20 +25,26 @@ library(gt)
 # 1. Personal data
 
 ## a. Data Summarizing
+
 I could calculate the mean screen time in minutes to compare my average screen time with the average minutes I spent in class. In days that I spent greater time in class, I would expect to have a lower screen time.
 
-## b. 
+## b.
+
 ```{r}
 #reading in my data
 screen_time <- read_csv(Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/data/screen_time.csv)
 
 ```
+
 ```{r}
 #create a category based on class time
 data <- data %>%
   mutate(class_time_group = ifelse(`Minutes of class` > median(`Minutes of class`, na.rm = TRUE),
                                    "High Class Time", "Low Class Time"))
-  
+
+```
+
+```{r}
 #creating visualization
 ggplot(data= HW 1 ENVS 193DS - Screen time.csv, 
        aes(x = class_time_group, 
@@ -61,11 +67,12 @@ ggplot(data= HW 1 ENVS 193DS - Screen time.csv,
     y = "Screen Time (minutes)"
   ) +
   theme_minimal()
+
 ```
 
 ```{r}
 #Same as HW2
-ggplot(data= screen_time_clean, #get data from glaciers file
+ggplot(data= screen_time, #get data from glaciers file
        aes(x= minutes_of_class,#x-axis is the time in class
            y= screen_time_min))+ #y-axis is the screen time
   geom_point(color= "skyblue")+ #make dots blue
@@ -73,34 +80,46 @@ ggplot(data= screen_time_clean, #get data from glaciers file
        y= "Screen Time (min)") #relabel for aesthetics
 ```
 
-# 2.  Affective visualization
+## c.
+
+## d.
+
+# 2. Affective visualization
 
 ## a.
-A form of affective data visualization I can use to depict my personal data  would be to draw a student sitting in class, completely glued to their phone, while the teacher is in the background. I’d exaggerate the artwork by having the phone glow or even have the student melting into the screen to show how consuming it is. This would reflect the behavioral side of my data to test whether being in class actually limits my screen time, or if it doesn't change anything. The goal would be to make the viewer feel the disconnect that phones can cause, even in learning environments.
 
-## b. 
+A form of affective data visualization I can use to depict my personal data would be to draw out my weekly school schedule, showing my classes from Monday through Friday. Mixed into this schedule, I would include a graph of my screen time data for each day of the week. This would allow the viewer to easily see if having more class time actually reduces my screen time or if it doesn't really make a difference. The goal would be to create an engaging and visually clear piece that tells the story at a quick glance.
+
+## b.
+
 ```{r}
-![](IMG_6713.HEIC)
+![](IMG_7075.HEIC)
 ```
 
 ## c.
 
-## d. 
-My piece shows a student melting into the screen of their phone as a way to display how distracted we are by our phones, to the point where we don’t even pay attention in class. I was inspired by Jill Petito’s paintings because they made me want to make something that also looked aesthetically pleasing, and I also liked how Lorraine Woodruff-Long put deeper meaning behind her work, which made me think about how to do the same with mine. I did a pencil drawing because this was the only way I knew I could depict this. I started by sketching the outline, then slowly added more details and shading until I felt like it was finished.
+## d.
+
+My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pencil and watercolor, with watercolor used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class.
 
 # 3.
 
-## a. 
+## a.
+
 This paper utilizes linear regression as the statistical test.
+
 ```{r}
 ![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
 ```
-## b. 
+
+## b.
+
 The authors visually represented their statistics very clearly. The linear regression model attached displays the proper response and predictor variables on the y- and x-axes, respectively. The figure shows summary statistics by providing the line of best fit along with the individual data points and a 95% confidence interval shaded around the line, which helps show the model’s uncertainty while still letting the reader see the raw data.
 
 ## c.
+
 The authors handled visual clutter well. The individual dots as data points are small but still easy to see. The line of best fit is a good thickness (not too bold) and the 95% confidence interval is a transparent grey that blends well with the background, so it doesn’t overwhelm the reader or distract from the actual data.
 
-## d. 
-One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.
+## d.
 
+One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.
