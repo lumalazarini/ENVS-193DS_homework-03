@@ -15,7 +15,7 @@ execute:
 
 # Set up
 
-```{r libraries-and-data}
+```{r, warning=FALSE, message=FALSE}
 library(tidyverse) # general use
 library(janitor) # cleaning data frames
 library(here) # file/folder organization
@@ -95,34 +95,34 @@ gt_table |>
     mean_screen_time = "Mean Screen Time (minutes)"
   )
 ```
+
 # 2. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
-A form of affective data visualization I can use to depict my personal data would be to draw out my weekly school schedule, showing my classes from Monday through Friday. Mixed into this schedule, I would include a graph of my screen time data for each day of the week. This would allow the viewer to easily see if having more class time actually reduces my screen time or if it doesn't really make a difference. The goal would be to create an engaging and visually clear piece that tells the story at a quick glance.
+A form of affective data visualization I can use to depict my personal data would be to draw out my weekly school schedule, showing my classes from Monday through Friday. Mixed into this schedule, I would include a graph of my screen time data for each day of the week. This would allow the viewer to easily see if having more class time actually reduces my screen time or if it doesn't really make a difference. I will also add weights on top of days that I worked out and designate the days that I have work under the day title. The goal would be to create an engaging and visually clear piece that tells the story at a quick glance.
 
 ## b. Create a sketch (on paper) of your idea
-![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/IMG_7075.jpeg)
+
+![](images/IMG_7075.jpeg)
 
 ## c. Make a draft of your visualization
 
-## d. Write an artist statement
+## ![]()d. Write an artist statement
 
-My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pencil and watercolor, with watercolor used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class.
+My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule, with a sentence under days I worked, and weights over days I worked out. I include a total of 4 variables, class time, screen time, whether I worked out, and whether I had work. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pen and acrylic paint markers used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class. I then drew the final details.
 
 # 3. Statistical critique
 
 ## a. Revisit and summarize
 
-This paper utilizes linear regression as the statistical test.
-![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
-
+This paper utilizes linear regression as the statistical test. ![](images/screenshot-6.58.15 copy.png)
 
 ## b. Visual clarity
 
 The authors visually represented their statistics very clearly. The linear regression model attached displays the proper response and predictor variables on the y- and x-axes, respectively. The figure shows summary statistics by providing the line of best fit along with the individual data points and a 95% confidence interval shaded around the line, which helps show the model’s uncertainty while still letting the reader see the raw data.
 
-## c. Aesthetic clarity 
+## c. Aesthetic clarity
 
 The authors handled visual clutter well. The individual dots as data points are small but still easy to see. The line of best fit is a good thickness (not too bold) and the 95% confidence interval is a transparent grey that blends well with the background, so it doesn’t overwhelm the reader or distract from the actual data.
 
