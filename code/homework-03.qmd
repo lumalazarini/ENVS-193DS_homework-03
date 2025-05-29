@@ -2,6 +2,7 @@
 title: "Homework 3"
 author: "Luma Lazarini"
 date: "05/28/2025"
+output-dir: docs
 format:
   html:
     toc: true # use this to display a table of contents
