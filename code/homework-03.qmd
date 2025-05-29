@@ -92,11 +92,7 @@ gt_table |>
     mean_screen_time = "Mean Screen Time (minutes)"
   )
 ```
-
 # 2. Affective visualization
-
-
-# Problem 2. Affective visualization
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
@@ -111,7 +107,7 @@ A form of affective data visualization I can use to depict my personal data woul
 
 My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pencil and watercolor, with watercolor used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class.
 
-# Problem 3. Statistical critique
+# 3. Statistical critique
 
 ## a. Revisit and summarize
 
