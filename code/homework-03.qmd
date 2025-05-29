@@ -28,7 +28,7 @@ library(gt)
 
 I could calculate class time between high and low categories by finding the mean of my class time added. I can then create a boxplot to compare this with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.
 
-## b.
+## b. Visualization
 
 ```{r}
 #reading in my data
@@ -64,11 +64,11 @@ ggplot(data= data, #get data from data file
 
 ```
 
-## c.
+## c. Caption
 
 Figure \_\_. Boxplot illustrating screen time (in minutes) categorized by class time groups. Contrary to the original hypothesis, days with higher class time correspond to slightly increased screen time. The lower class time group includes more data points and exhibits a wider range of values. In the plot, box edges indicate the interquartile range (IQR), the line within each box represents the median, and whiskers extend to the most extreme values excluding outliers. Outliers are shown as black dots.
 
-## d.
+## d. Table presentation
 
 ```{r, warning=FALSE, message=FALSE}
 # Create a summary table
@@ -95,35 +95,38 @@ gt_table |>
 
 # 2. Affective visualization
 
-## a.
+
+# Problem 2. Affective visualization
+
+## a. Describe in words what an affective visualization could look like for your personal data
 
 A form of affective data visualization I can use to depict my personal data would be to draw out my weekly school schedule, showing my classes from Monday through Friday. Mixed into this schedule, I would include a graph of my screen time data for each day of the week. This would allow the viewer to easily see if having more class time actually reduces my screen time or if it doesn't really make a difference. The goal would be to create an engaging and visually clear piece that tells the story at a quick glance.
 
-## b.
+## b. Create a sketch (on paper) of your idea
 ![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/IMG_7075.jpeg)
 
-## c.
+## c. Make a draft of your visualization
 
-## d.
+## d. Write an artist statement
 
 My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pencil and watercolor, with watercolor used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class.
 
-# 3.
+# Problem 3. Statistical critique
 
-## a.
+## a. Revisit and summarize
 
 This paper utilizes linear regression as the statistical test.
 ![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
 
 
-## b.
+## b. Visual clarity
 
 The authors visually represented their statistics very clearly. The linear regression model attached displays the proper response and predictor variables on the y- and x-axes, respectively. The figure shows summary statistics by providing the line of best fit along with the individual data points and a 95% confidence interval shaded around the line, which helps show the model’s uncertainty while still letting the reader see the raw data.
 
-## c.
+## c. Aesthetic clarity 
 
 The authors handled visual clutter well. The individual dots as data points are small but still easy to see. The line of best fit is a good thickness (not too bold) and the 95% confidence interval is a transparent grey that blends well with the background, so it doesn’t overwhelm the reader or distract from the actual data.
 
-## d.
+## d. Recommendations
 
 One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they're easier to read. These changes would make the figure easier to understand at a quick glance.
