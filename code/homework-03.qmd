@@ -26,63 +26,70 @@ library(gt)
 
 ## a. Data Summarizing
 
-I could calculate the mean screen time in minutes to compare my average screen time with the average minutes I spent in class. In days that I spent greater time in class, I would expect to have a lower screen time.
+I could calculate class time between high and low categories by finding the mean of my class time added. I can then create a boxplot to compare this with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.
 
 ## b.
 
 ```{r}
 #reading in my data
-screen_time <- read_csv(Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/data/screen_time.csv)
-
+screen_time <- read_csv(here("data", "screen_time.csv"))
 ```
 
 ```{r}
 #create a category based on class time
-data <- data %>%
-  mutate(class_time_group = ifelse(`Minutes of class` > median(`Minutes of class`, na.rm = TRUE),
-                                   "High Class Time", "Low Class Time"))
-
+data <- screen_time |> #get data from screen_time file
+  mutate(class_time_group = ifelse #add a new column called class_time_group
+         (`Minutes of class` > mean #when minutes of class is greater than the mean, classify as high class time
+           (`Minutes of class` [`Minutes of class` > 0], na.rm = TRUE), #exclude zeros and NA's
+                                   "High Class Time", "Low Class Time")) #if condition if true, label as high class time. If false, label as low class time
 ```
 
 ```{r}
 #creating visualization
-ggplot(data= HW 1 ENVS 193DS - Screen time.csv, 
-       aes(x = class_time_group, 
-           y = `Screen time (min)`, 
-           fill = class_time_group)) +
-  geom_jitter(width = 0.2, 
-              alpha = 0.6, 
-              color = "black") +  # individual data points
-  stat_summary(fun = mean, 
-               geom = "crossbar", 
-               width = 0.5,
-               color = "darkred", 
-               fatten = 2, 
-               show.legend = FALSE) +  # mean bars
-  scale_fill_manual(values = c("High Class Time" = "#2E86AB", 
-                               "Low Class Time" = "#F18F01")) +
+ggplot(data= data, #get data from data file
+       aes(x = class_time_group, #x is class time group (high or low)
+           y = `Screen time (min)`, #y is screen time
+           fill = class_time_group)) + # fill color based on class time group
+  geom_boxplot() +  # Show boxplot without default outliers
+  geom_jitter(width = 0.2, alpha = 0.6, color = "blue") +  # Add individual points
+  scale_fill_manual(values = c("High Class Time" = "#2E86AB", # blue for high class time
+                               "Low Class Time" = "#F18F01")) + #orange for low class time 
   labs(
-    title = "Average Screen Time by Class Time Group",
-    x = "Class Time Group",
-    y = "Screen Time (minutes)"
+    title = "Average Screen Time by Class Time Group", #Plot title
+    x = "Class Time", #x-axis label
+    y = "Screen Time (minutes)", #y-axis label
+    fill = "Class Time Group" # legend title
   ) +
-  theme_minimal()
+  theme_classic() #minimal theme
 
-```
-
-```{r}
-#Same as HW2
-ggplot(data= screen_time, #get data from glaciers file
-       aes(x= minutes_of_class,#x-axis is the time in class
-           y= screen_time_min))+ #y-axis is the screen time
-  geom_point(color= "skyblue")+ #make dots blue
-  labs(x= "Time in Class (min)",
-       y= "Screen Time (min)") #relabel for aesthetics
 ```
 
 ## c.
+Figure __. Boxplot illustrating screen time (in minutes) categorized by class time groups. Contrary to the original hypothesis, days with higher class time correspond to slightly increased screen time. The lower class time group includes more data points and exhibits a wider range of values. In the plot, box edges indicate the interquartile range (IQR), the line within each box represents the median, and whiskers extend to the most extreme values excluding outliers. Outliers are shown as black dots.
 
 ## d.
+```{r, warning=FALSE, message=FALSE}
+# Create a summary table
+gt_table <- data |> 
+  group_by(class_time_group) |> 
+  
+# Summarize mean screen time
+  summarise(mean_screen_time = mean(`Screen time (min)`[`Screen time (min)` > 0], na.rm = TRUE)) |> #Calculate the mean screen time for each group 
+  mutate(mean_screen_time = round(mean_screen_time, 1)) #Round the mean values to one decimal place
+
+# Create a gt table
+gt_table |> 
+  gt() |> 
+  
+# Add the titles and labels
+  tab_header(
+    title = "Average Screen Time by Class Time Group"
+  ) |> 
+  cols_label(
+    class_time_group = "Class Time Group",
+    mean_screen_time = "Mean Screen Time (minutes)"
+  )
+```
 
 # 2. Affective visualization
 
@@ -122,4 +129,4 @@ The authors handled visual clutter well. The individual dots as data points are 
 
 ## d.
 
-One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.
+One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they're easier to read. These changes would make the figure easier to understand at a quick glance.
