@@ -65,9 +65,11 @@ ggplot(data= data, #get data from data file
 ```
 
 ## c.
-Figure __. Boxplot illustrating screen time (in minutes) categorized by class time groups. Contrary to the original hypothesis, days with higher class time correspond to slightly increased screen time. The lower class time group includes more data points and exhibits a wider range of values. In the plot, box edges indicate the interquartile range (IQR), the line within each box represents the median, and whiskers extend to the most extreme values excluding outliers. Outliers are shown as black dots.
+
+Figure \_\_. Boxplot illustrating screen time (in minutes) categorized by class time groups. Contrary to the original hypothesis, days with higher class time correspond to slightly increased screen time. The lower class time group includes more data points and exhibits a wider range of values. In the plot, box edges indicate the interquartile range (IQR), the line within each box represents the median, and whiskers extend to the most extreme values excluding outliers. Outliers are shown as black dots.
 
 ## d.
+
 ```{r, warning=FALSE, message=FALSE}
 # Create a summary table
 gt_table <- data |> 
@@ -98,10 +100,7 @@ gt_table |>
 A form of affective data visualization I can use to depict my personal data would be to draw out my weekly school schedule, showing my classes from Monday through Friday. Mixed into this schedule, I would include a graph of my screen time data for each day of the week. This would allow the viewer to easily see if having more class time actually reduces my screen time or if it doesn't really make a difference. The goal would be to create an engaging and visually clear piece that tells the story at a quick glance.
 
 ## b.
-
-```{r}
-![](IMG_7075.HEIC)
-```
+![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/IMG_7075.jpeg)
 
 ## c.
 
@@ -114,10 +113,8 @@ My piece shows a graph of my data for each day of the week, color-coded and laye
 ## a.
 
 This paper utilizes linear regression as the statistical test.
-
-```{r}
 ![](/Users/lumabraconi/Documents/ENVS-193DS/ENVS-193DS_homework-03/screenshot-6.58.15 copy.png)
-```
+
 
 ## b.
 
