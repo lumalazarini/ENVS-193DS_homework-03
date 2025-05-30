@@ -28,7 +28,7 @@ library(gt)
 
 ## a. Data Summarizing
 
-I could calculate class time between high and low categories by finding the mean of my class time added. I can then create a boxplot to compare this with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.
+I could first distingush class time between high and low categories by finding the mean of my class time and placing higher values as high and lower values as low. I can then create a boxplot to compare these categories with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.
 
 ## b. Visualization
 
@@ -109,11 +109,11 @@ A form of affective data visualization I can use to depict my personal data woul
 
 ![](images/IMG_7079.jpeg)
 
-I am very artistically challenged and plan on moving this into a digital format, but did not have the resources to do so by the submission date. I plan on borrowing a friend's iPad to complete the final draft. Please don't remove points for this reason.
+I am very artistically challenged and plan on moving this into a digital format, but did not have the resources to do so by the submission date. I plan on borrowing a friend's iPad to complete the final draft.
 
 ## d. Write an artist statement
 
-My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule, with a sentence under days I worked, and weights over days I worked out. I include a total of 4 variables, class time, screen time, whether I worked out, and whether I had work. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pen and acrylic paint markers used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class. I then drew the final details.
+My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule, with a sentence under days I worked, and weights over days I worked out. I include a total of 4 variables, class time, screen time, whether I worked out, and whether I had work. I was inspired by Giorgia Lupi and Stefanie Posavec's Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pen and acrylic paint markers. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class. I then drew the final details.
 
 # 3. Statistical critique
 
@@ -131,4 +131,4 @@ The authors handled visual clutter well. The individual dots as data points are 
 
 ## d. Recommendations
 
-One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they're easier to read. These changes would make the figure easier to understand at a quick glance.
+One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also suggest increasing the size of the axis labels slightly and bold them so they're easier to read. These changes would make the figure easier to understand at a quick glance.
