@@ -120,7 +120,7 @@ My piece shows a graph of my data for each day of the week, color-coded and laye
 
 ## a. Revisit and summarize
 
-This paper utilizes linear regression as the statistical test. ![](images/screenshot-6.58.15%20copy.png)
+This paper utilizes linear regression as the statistical test. The response variable is the standard length of the Pacific herring and the predictor variable is the axis vertebrae width. ![](images/screenshot-6.58.15%20copy.png)
 
 ## b. Visual clarity
 
