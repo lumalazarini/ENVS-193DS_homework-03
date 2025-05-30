@@ -157,7 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>1. Personal data</h1>
 <section id="a.-data-summarizing" class="level2">
 <h2 class="anchored" data-anchor-id="a.-data-summarizing">a. Data Summarizing</h2>
-<p>I could calculate class time between high and low categories by finding the mean of my class time added. I can then create a boxplot to compare this with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.</p>
+<p>I could first distingush class time between high and low categories by finding the mean of my class time and placing higher values as high and lower values as low. I can then create a boxplot to compare these categories with my screen time. In days that I spent greater time in class, I would expect to have a lower screen time because I am more busy.</p>
 </section>
 <section id="b.-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="b.-visualization">b. Visualization</h2>
@@ -227,23 +227,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_screen_time =</span> <span class="st">"Mean Screen Time (minutes)"</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="ebisdugxcd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ebisdugxcd table {
+<div id="nkyjrctirz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nkyjrctirz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ebisdugxcd thead, #ebisdugxcd tbody, #ebisdugxcd tfoot, #ebisdugxcd tr, #ebisdugxcd td, #ebisdugxcd th {
+#nkyjrctirz thead, #nkyjrctirz tbody, #nkyjrctirz tfoot, #nkyjrctirz tr, #nkyjrctirz td, #nkyjrctirz th {
   border-style: none;
 }
 
-#ebisdugxcd p {
+#nkyjrctirz p {
   margin: 0;
   padding: 0;
 }
 
-#ebisdugxcd .gt_table {
+#nkyjrctirz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -269,12 +269,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_caption {
+#nkyjrctirz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ebisdugxcd .gt_title {
+#nkyjrctirz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ebisdugxcd .gt_subtitle {
+#nkyjrctirz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ebisdugxcd .gt_heading {
+#nkyjrctirz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -310,13 +310,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_bottom_border {
+#nkyjrctirz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_col_headings {
+#nkyjrctirz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_col_heading {
+#nkyjrctirz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -351,7 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ebisdugxcd .gt_column_spanner_outer {
+#nkyjrctirz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -363,15 +363,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ebisdugxcd .gt_column_spanner_outer:first-child {
+#nkyjrctirz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ebisdugxcd .gt_column_spanner_outer:last-child {
+#nkyjrctirz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ebisdugxcd .gt_column_spanner {
+#nkyjrctirz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -383,11 +383,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ebisdugxcd .gt_spanner_row {
+#nkyjrctirz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ebisdugxcd .gt_group_heading {
+#nkyjrctirz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -413,7 +413,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ebisdugxcd .gt_empty_group_heading {
+#nkyjrctirz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -428,15 +428,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ebisdugxcd .gt_from_md > :first-child {
+#nkyjrctirz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ebisdugxcd .gt_from_md > :last-child {
+#nkyjrctirz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ebisdugxcd .gt_row {
+#nkyjrctirz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -455,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ebisdugxcd .gt_stub {
+#nkyjrctirz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -468,7 +468,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ebisdugxcd .gt_stub_row_group {
+#nkyjrctirz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -482,15 +482,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ebisdugxcd .gt_row_group_first td {
+#nkyjrctirz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ebisdugxcd .gt_row_group_first th {
+#nkyjrctirz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ebisdugxcd .gt_summary_row {
+#nkyjrctirz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -500,16 +500,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ebisdugxcd .gt_first_summary_row {
+#nkyjrctirz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_first_summary_row.thick {
+#nkyjrctirz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ebisdugxcd .gt_last_summary_row {
+#nkyjrctirz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -519,7 +519,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_grand_summary_row {
+#nkyjrctirz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -529,7 +529,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ebisdugxcd .gt_first_grand_summary_row {
+#nkyjrctirz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -539,7 +539,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_last_grand_summary_row_top {
+#nkyjrctirz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -549,11 +549,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_striped {
+#nkyjrctirz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ebisdugxcd .gt_table_body {
+#nkyjrctirz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -562,7 +562,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_footnotes {
+#nkyjrctirz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -576,7 +576,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_footnote {
+#nkyjrctirz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -585,7 +585,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ebisdugxcd .gt_sourcenotes {
+#nkyjrctirz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -599,7 +599,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ebisdugxcd .gt_sourcenote {
+#nkyjrctirz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -607,72 +607,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ebisdugxcd .gt_left {
+#nkyjrctirz .gt_left {
   text-align: left;
 }
 
-#ebisdugxcd .gt_center {
+#nkyjrctirz .gt_center {
   text-align: center;
 }
 
-#ebisdugxcd .gt_right {
+#nkyjrctirz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ebisdugxcd .gt_font_normal {
+#nkyjrctirz .gt_font_normal {
   font-weight: normal;
 }
 
-#ebisdugxcd .gt_font_bold {
+#nkyjrctirz .gt_font_bold {
   font-weight: bold;
 }
 
-#ebisdugxcd .gt_font_italic {
+#nkyjrctirz .gt_font_italic {
   font-style: italic;
 }
 
-#ebisdugxcd .gt_super {
+#nkyjrctirz .gt_super {
   font-size: 65%;
 }
 
-#ebisdugxcd .gt_footnote_marks {
+#nkyjrctirz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ebisdugxcd .gt_asterisk {
+#nkyjrctirz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ebisdugxcd .gt_indent_1 {
+#nkyjrctirz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ebisdugxcd .gt_indent_2 {
+#nkyjrctirz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ebisdugxcd .gt_indent_3 {
+#nkyjrctirz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ebisdugxcd .gt_indent_4 {
+#nkyjrctirz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ebisdugxcd .gt_indent_5 {
+#nkyjrctirz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ebisdugxcd .katex-display {
+#nkyjrctirz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ebisdugxcd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nkyjrctirz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -717,11 +717,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="c.-make-a-draft-of-your-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="c.-make-a-draft-of-your-visualization">c.&nbsp;Make a draft of your visualization</h2>
 <p><img src="images/IMG_7079.jpeg" class="img-fluid"></p>
-<p>I am very artistically challenged and plan on moving this into a digital format, but did not have the resources to do so by the submission date. I plan on borrowing a friend’s iPad to complete the final draft. Please don’t remove points for this reason.</p>
+<p>I am very artistically challenged and plan on moving this into a digital format, but did not have the resources to do so by the submission date. I plan on borrowing a friend’s iPad to complete the final draft.</p>
 </section>
 <section id="d.-write-an-artist-statement" class="level2">
 <h2 class="anchored" data-anchor-id="d.-write-an-artist-statement">d.&nbsp;Write an artist statement</h2>
-<p>My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule, with a sentence under days I worked, and weights over days I worked out. I include a total of 4 variables, class time, screen time, whether I worked out, and whether I had work. I was inspired by Giorgia Lupi and Stefanie Posavec’s Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pen and acrylic paint markers used for the bar columns. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class. I then drew the final details.</p>
+<p>My piece shows a graph of my data for each day of the week, color-coded and layered with my school schedule, with a sentence under days I worked, and weights over days I worked out. I include a total of 4 variables, class time, screen time, whether I worked out, and whether I had work. I was inspired by Giorgia Lupi and Stefanie Posavec’s Dear Data project, where they visualized personal data in creative and meaningful ways. I liked how their work made the data both informative and visually engaging. The form of my work is a hand-drawn piece using pen and acrylic paint markers. I created my piece by first drawing the data bars, then layering my weekly class schedule over them to show the relationship between screen time and time spent in class. I then drew the final details.</p>
 </section>
 </section>
 <section id="statistical-critique" class="level1">
@@ -740,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="d.-recommendations" class="level2">
 <h2 class="anchored" data-anchor-id="d.-recommendations">d.&nbsp;Recommendations</h2>
-<p>One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also consider changing the color of the regression line to red other than blue to make it more visible and contrast better with the dots. Lastly, I would increase the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.</p>
+<p>One recommendation I would make is to change the background color of the plot from grey to white to make the data points and confidence interval stand out more. I would also suggest increasing the size of the axis labels slightly and bold them so they’re easier to read. These changes would make the figure easier to understand at a quick glance.</p>
 </section>
 </section>
 
